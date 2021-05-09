@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- External CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/fullpage.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="fullpage">
+      <ul id="menu">
+        <li data-menuanchor="firstPage" class="active">
+          <a href="#h">Home</a>
+        </li>
+        <li data-menuanchor="secondPage">
+          <a href="#a">About</a>
+        </li>
+        <li data-menuanchor="thirdPage">
+          <a href="#w">Work</a>
+        </li>
+        <li data-menuanchor="fourthPage">
+          <a href="#c">Contact</a>
+        </li>
+      </ul>
+      <div class="section home" id="h">
+        <p class="name">
+          Portfolio of <br />
+          Ronald <br />
+          Terblanche
+        </p>
+        <p>
+          Aspiring <br />
+          Backend Developer
+        </p>
+        <span class="home-animation"></span>
+      </div>
+      <div class="section about" id="a">Some section</div>
+      <div class="section work" id="w">
+        <div class="one">some section</div>
+        <div class="one" data-aos="fade-right">some section</div>
+      </div>
+      <div class="section contact" id="c">Some section</div>
+    </div>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/script.js"></script>
+  </body>
+</html>
