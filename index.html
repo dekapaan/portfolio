@@ -8,7 +8,6 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="/CSS/style.css" />
     <!-- External CSS -->
-    <link rel="stylesheet" href="/CSS/fullpage.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,7 +22,7 @@
     />
   </head>
   <body>
-    <div id="fullpage">
+    <div>
       <ul id="myMenu" data-aos="fade" data-aos-duration="2000" class="nav">
         <li data-menuanchor="firstPage" class="active">
           <a href="#firstPage">Home</a>
@@ -38,7 +37,13 @@
           <a href="#fourthPage">Contact</a>
         </li>
       </ul>
-      <div class="section home" id="firstPage">
+      <div
+        class="section home"
+        class="luxy-el"
+        data-speed-y="5"
+        data-offset="-50"
+        id="firstPage"
+      >
         <p class="home-social" data-aos="fade" data-aos-duration="2000">
           <a href="#">Linkedin</a>
           <a href="#">Repl.it</a>
@@ -60,59 +65,98 @@
         ></span>
       </div>
       <div class="section about" id="secondPage">
-        <p class="about-heading" data-aos="fade" data-aos-duration="2000">
-          About Me
-        </p>
-        <p class="bio" data-aos="fade" data-aos-duration="2000">
-          I am an introvert, but that does not affect my confidence and skills.
-          I am geared towards helping those around me and tend to take up that
-          role without actively seeking it outeffort. I am a critical and
-          analytical thinker to form accurate judgment, and these skills fuel my
-          ability to learn and implement new concepts. I usually do not put
-          myself in a leadershipin leadership position, but if the need arises I
-          am able to meet the role head-on. I have run a backyard nursery and
-          have done freelance work in the past. This has given me valuable
-          skills such as communication skills and the ability to delegate tasks.
-        </p>
-        <p class="code-pass" data-aos="fade" data-aos-duration="2000">
-          My interest in this field came from the fact that I enjoy
-          self-sufficiency and prefer to solve problems by building the
-          necessary skills as needed. This has caused me to gain experience in
-          working with the terminal and troubleshooting problems in particular
-          to phones and computers. I have also played around with loading
-          different Linux distributions for old phones to improve performance.
-        </p>
-        <p class="skills-heading" data-aos="fade" data-aos-duration="2000">
-          Skills
-        </p>
-        <img
-          src="/images/Ronald Terblanche _edit.JPG"
-          alt="Picture of Author"
-          data-aos="fade"
-          data-aos-duration="2000"
-        />
-        <div class="soft-skills" data-aos="fade" data-aos-duration="2000">
-          <div>
-            <p>1. Communication</p>
-            <p>2. Problem-solving</p>
-            <p>3. Time management</p>
-            <p>4. Critical and analytical thinking</p>
+        <div class="about-container">
+          <p class="about-heading" data-aos="fade" data-aos-duration="2000">
+            About Me
+          </p>
+          <div class="bio-pic">
+            <p class="bio" data-aos="fade" data-aos-duration="2000">
+              I am an introvert, but that does not affect my confidence and
+              skills. I am geared towards helping those around me and tend to
+              take up that role without actively seeking it outeffort. I am a
+              critical and analytical thinker to form accurate judgment, and
+              these skills fuel my ability to learn and implement new concepts.
+              I usually do not put myself in a leadershipin leadership position,
+              but if the need arises I am able to meet the role head-on. I have
+              run a backyard nursery and have done freelance work in the past.
+              This has given me valuable skills such as communication skills and
+              the ability to delegate tasks.
+            </p>
+            <img
+              src="/images/Ronald Terblanche _edit.JPG"
+              alt="Picture of Author"
+              data-aos="fade"
+              data-aos-duration="2000"
+            />
           </div>
-          <div>Soft</div>
+          <p class="code-pass" data-aos="fade" data-aos-duration="2000">
+            My interest in this field came from the fact that I enjoy
+            self-sufficiency and prefer to solve problems by building the
+            necessary skills as needed. This has caused me to gain experience in
+            working with the terminal and troubleshooting problems in particular
+            to phones and computers. I have also played around with loading
+            different Linux distributions for old phones to improve performance.
+          </p>
         </div>
-        <i class="fab fa-html5 html"></i>
+        <div class="skills-content">
+          <p class="skills-heading" data-aos="fade" data-aos-duration="2000">
+            Skills
+          </p>
+          <div class="soft-skills" data-aos="fade" data-aos-duration="2000">
+            <div>
+              <p>1. Communication</p>
+              <p>2. Problem-solving</p>
+              <p>3. Time management</p>
+              <p>4. Critical and analytical thinking</p>
+            </div>
+            <div>Soft</div>
+          </div>
+          <div
+            class="technical-skills"
+            data-aos="fade"
+            data-aos-duration="2000"
+          >
+            <div>Technical</div>
+            <div>
+              <p>1. HTML5</p>
+              <p>2. CSS3</p>
+              <p>3. Python</p>
+              <p>4. CLI</p>
+            </div>
+          </div>
+        </div>
+        <!-- <i class="fab fa-html5 html"></i>
         <i class="fab fa-css3-alt css"></i>
-        <i class="fab fa-python python"></i>
+        <i class="fab fa-python python"></i> -->
       </div>
       <div class="section work" id="thirdPage">
-        <div class="one">some section</div>
-        <div class="one" data-aos="fade-right">some section</div>
+        <p class="education-heading" data-aos="fade" data-aos-duration="2000">
+          Education
+        </p>
+        <div class="education-content-container">
+          <div
+            class="education-content"
+            data-aos="fade"
+            data-aos-duration="2000"
+          >
+            <p class="time">2017-present</p>
+            <p class="what">Self-taught Troubleshooting software</p>
+            <p class="description">
+              Due to my nature of self-sufficiency, I have built up a knowledge
+              and comfortability <br />
+              with solving software problems. I have a tendency of tinkering
+              with my devices,<br />
+              changing configurations and OS's to maximize performance and
+              security. <br />
+              With this tendency problems arise, which I proceed to gain
+              knowledge about and solve.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="section contact" id="fourthPage">Some section</div>
     </div>
     <!-- Scripts -->
-    <script src="/scripts/script.js"></script>
-    <script type="text/javascript" src="/scripts/fullpage.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

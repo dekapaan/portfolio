@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  max-width: 100%;
   box-sizing: border-box;
 }
 html {
@@ -10,7 +11,6 @@ body {
   font-family: "inter", sans-serif;
 }
 .home,
-.about,
 .work,
 .contact {
   height: 100vh;
@@ -46,6 +46,7 @@ body {
   right: 60px;
   text-align: right;
   list-style: none;
+  z-index: 9999;
 }
 #myMenu li a {
   text-decoration: none;
@@ -103,70 +104,59 @@ body {
   text-align: left;
   font-size: 70px;
 }
-.about {
-  background-color: #111;
+.section.about {
+  background: #111;
   color: #eeeeee;
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(20, 1fr);
-  height: 200vh;
+  height: fit-content;
 }
-
-p.about-heading {
-  grid-row: 4;
-  grid-column: 4/8;
-  font-size: 70px;
+.bio-pic {
+  display: flex;
+  flex-direction: row;
 }
 .about img {
-  grid-row: 6/9;
-  grid-column: 14/18;
-  width: 400px;
+  display: inline-block;
+  width: 20%;
 }
-p.bio {
-  grid-row: 6;
-  grid-column: 5/12;
-  font-size: 20px;
-  color: #eeeeee;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-}
-p.code-pass {
-  grid-row: 9;
-  grid-column: 3/10;
-  font-size: 20px;
-  color: #eeeeee;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-}
-p.skills-heading {
-  grid-row: 14;
-  grid-column: 7;
+.about-heading {
+  display: inline-block;
+  margin-left: 15%;
+  margin-top: 12%;
+  margin-bottom: 5%;
   font-family: "inter", sans-serif;
   font-size: 70px;
 }
-.html {
-  grid-row: 17;
-  grid-column: 3;
+.about p.bio {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  width: 40%;
+  margin-left: 20%;
+  margin-right: 5%;
 }
-.css {
-  grid-row: 18;
+.about .code-pass {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  width: 50%;
+  margin-left: 5%;
+  color: white;
 }
-.python {
-  grid-row: 19;
-}
-i {
-  font-size: 150px;
-  color: #eeeeee;
+p.skills-heading {
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  font-family: "inter", sans-serif;
+  font-size: 70px;
 }
 .soft-skills {
   display: flex;
   flex-direction: row;
   align-content: center;
   font-family: "Roboto", sans-serif;
+  margin-left: 50%;
   font-size: 30px;
   font-weight: 100;
-  grid-row: 16;
-  grid-column: 10/16;
   color: #eeeeee;
 }
 .soft-skills p {
@@ -181,8 +171,51 @@ i {
 .soft-skills div:last-of-type::after {
   width: 100%;
 }
-.work {
-  background-color: blueviolet;
+.technical-skills {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 3%;
+  font-size: 30px;
+  font-weight: 100;
+  color: #eeeeee;
+}
+.technical-skills div:first-of-type {
+  margin-left: 15%;
+  margin-right: -5.5%;
+  transform: rotate(-90deg);
+}
+.section.work {
+  background: #111;
+  color: #eeeeee;
+}
+p.education-heading {
+  display: inline-block;
+  font-family: "inter", sans-serif;
+  font-size: 70px;
+  margin-top: 12%;
+  margin-left: 8%;
+}
+.education-content {
+  margin-top: 2%;
+  margin-left: 26%;
+  font-family: "inter", sans-serif;
+}
+.time {
+  font-size: 18px;
+  font-weight: 100;
+}
+.what {
+  font-family: "inter", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 2%;
+}
+.description {
+  font-family: "inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
 }
 .contact {
   background-color: brown;
