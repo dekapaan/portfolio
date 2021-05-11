@@ -1,13 +1,17 @@
 * {
   padding: 0;
   margin: 0;
-  max-width: 100%;
   box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 body {
+  width: fit-content;
   font-family: "inter", sans-serif;
 }
 .home,
@@ -54,6 +58,9 @@ body {
   display: inline-block;
   margin-bottom: 10px;
   position: relative;
+}
+#myMenu li a.active {
+  text-decoration: line-through;
 }
 #myMenu a::after {
   content: "";
@@ -143,6 +150,7 @@ body {
   color: white;
 }
 p.skills-heading {
+  display: inline-block;
   margin-left: 15%;
   margin-top: 15%;
   margin-bottom: 5%;
@@ -189,6 +197,7 @@ p.skills-heading {
 .section.work {
   background: #111;
   color: #eeeeee;
+  height: fit-content;
 }
 p.education-heading {
   display: inline-block;
@@ -198,7 +207,8 @@ p.education-heading {
   margin-left: 8%;
 }
 .education-content {
-  margin-top: 2%;
+  display: inline-block;
+  margin-top: 5%;
   margin-left: 26%;
   font-family: "inter", sans-serif;
 }
@@ -213,13 +223,38 @@ p.education-heading {
   margin-bottom: 2%;
 }
 .description {
+  display: inline-block;
   font-family: "inter", sans-serif;
   font-weight: 200;
   font-size: 20px;
 }
-.contact {
-  background-color: brown;
+.experience-content-container {
+  text-align: end;
 }
+.experience-heading {
+  font-family: "inter", sans-serif;
+  font-size: 70px;
+  margin-top: 14%;
+  margin-right: 8%;
+}
+.experience-content {
+  margin-top: 5%;
+  margin-right: 26%;
+}
+.projects {
+  height: 100vh;
+  background-color: #111;
+  color: #eeeeee;
+}
+.projects-heading {
+  display: inline-block;
+  font-size: 70px;
+  margin-top: 15%;
+  color: #eeeeee;
+  text-align: end;
+  transform: rotate(-90deg);
+}
+
 .boop {
   text-align: right;
 }
