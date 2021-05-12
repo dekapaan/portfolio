@@ -5,7 +5,6 @@
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: scroll;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -13,6 +12,7 @@ body::-webkit-scrollbar {
 body {
   width: fit-content;
   font-family: "inter", sans-serif;
+  background-color: #111;
 }
 .home,
 .work,
@@ -39,7 +39,7 @@ body {
   bottom: 50%;
   position: absolute;
   background-color: #eeeeee;
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 .home-social a:hover::after {
   width: 100%;
@@ -119,10 +119,12 @@ body {
 .bio-pic {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .about img {
   display: inline-block;
   width: 20%;
+  margin-right: 10%;
 }
 .about-heading {
   display: inline-block;
@@ -132,20 +134,24 @@ body {
   font-family: "inter", sans-serif;
   font-size: 70px;
 }
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
 .about p.bio {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 100;
   color: white;
-  width: 40%;
-  margin-left: 20%;
-  margin-right: 5%;
+  padding-right: 5%;
+  margin-left: 30%;
 }
 .about .code-pass {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 100;
   width: 50%;
+  margin-top: 10%;
   margin-left: 5%;
   color: white;
 }
@@ -242,7 +248,7 @@ p.education-heading {
   margin-right: 26%;
 }
 .projects {
-  height: 100vh;
+  height: fit-content;
   background-color: #111;
   color: #eeeeee;
 }
@@ -253,6 +259,111 @@ p.education-heading {
   color: #eeeeee;
   text-align: end;
   transform: rotate(-90deg);
+}
+.project {
+  height: 373px;
+  width: 737px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 20px 30px;
+  margin-bottom: 7%;
+}
+.project-left {
+  /* text-shadow: 1px 1px #111; */
+  text-align: end;
+  margin-left: 15%;
+}
+.project-right {
+  margin-left: 52%;
+}
+.project-heading {
+  font-size: 50px;
+  font-weight: 200;
+  z-index: 0;
+}
+.project-tool {
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.project-description {
+  font-family: "inter", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+.project-buttons a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.project-buttons a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  bottom: 50%;
+  position: absolute;
+  background-color: #eeeeee;
+  transition: 0.2s linear;
+}
+.project-buttons a:hover::after {
+  width: 100%;
+}
+.project-buttons {
+  font-family: "Roboto", sans-serif;
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 200;
+  font-size: 22px;
+}
+.project1 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/testimonial.png);
+  background-size: cover;
+}
+.project2 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/timeline.png);
+  background-size: cover;
+}
+.project3 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/contact.png);
+  background-size: cover;
+}
+.project4 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/rock-paper.png);
+  background-size: cover;
+}
+.project5 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/sa-id.png);
+  background-size: cover;
+}
+.project6 {
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)),
+    url(/images/BMI.png);
+  background-size: cover;
+}
+.testimonial-heading {
+  font-size: 70px;
+  color: #eeeeee;
+  margin-left: 15%;
+  margin-top: 12%;
+  margin-bottom: 5%;
+}
+.testimonial-item img {
+  width: fit-content;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: border-change 10s infinite;
+  width: 40%;
+  margin-right: 8%;
+}
+.iamge-quote {
 }
 
 .boop {
