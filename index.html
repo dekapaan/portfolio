@@ -20,33 +20,48 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div>
       <ul id="myMenu" data-aos="fade" data-aos-duration="2000" class="nav">
-        <li data-menuanchor="firstPage">
-          <a href="#firstPage" class="active">Home</a>
+        <li>
+          <a href="#home" class="active">Home</a>
         </li>
-        <li data-menuanchor="secondPage">
-          <a href="#secondPage">About</a>
+        <li>
+          <a href="#about">About</a>
         </li>
-        <li data-menuanchor="thirdPage">
-          <a href="#thirdPage">Work</a>
+        <li>
+          <a href="#work">Work</a>
         </li>
-        <li data-menuanchor="fourthPage">
-          <a href="#fourthPage">Contact</a>
+        <li>
+          <a href="#projects">Projects</a>
         </li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div
         class="section home"
         class="luxy-el"
         data-speed-y="5"
         data-offset="-50"
-        id="firstPage"
+        id="home"
       >
         <p class="home-social" data-aos="fade" data-aos-duration="2000">
-          <a href="#">Linkedin</a>
-          <a href="#">Repl.it</a>
+          <a href="https://www.linkedin.com/in/ronald-terblanche-665b25211/"
+            >Linkedin</a
+          >
           <a href="#">Github</a>
         </p>
         <p class="name" data-aos="fade" data-aos-duration="2000">
@@ -56,7 +71,7 @@
         </p>
         <p data-aos="fade" data-aos-duration="2000">
           Aspiring <br />
-          Fullstack Developer
+          Backend Developer
         </p>
         <span
           class="home-animation"
@@ -64,42 +79,46 @@
           data-aos-duration="2000"
         ></span>
       </div>
-      <div class="section about" id="secondPage">
+      <div class="section about" id="about">
         <div class="about-container">
           <p class="about-heading" data-aos="fade" data-aos-duration="2000">
             About Me
           </p>
           <div class="bio-pic">
             <div class="about-text">
-              <p class="bio" data-aos="fade" data-aos-duration="2000">
-                I am an introvert, but that does not affect my confidence and
-                skills. I am geared towards helping those around me and tend to
-                take up that role without actively seeking it outeffort. I am a
-                critical and analytical thinker to form accurate judgment, and
-                these skills fuel my ability to learn and implement new
-                concepts. I usually do not put myself in a leadershipin
-                leadership position, but if the need arises I am able to meet
-                the role head-on. I have run a backyard nursery and have done
-                freelance work in the past. This has given me valuable skills
-                such as communication skills and the ability to delegate tasks.
-              </p>
-              <p class="code-pass" data-aos="fade" data-aos-duration="2000">
-                My interest in this field came from the fact that I enjoy
-                self-sufficiency and prefer to solve problems by building the
-                necessary skills as needed. This has caused me to gain
-                experience in working with the terminal and troubleshooting
-                problems in particular to phones and computers. I have also
-                played around with loading different Linux distributions for old
-                phones to improve performance.
-              </p>
+              <div class="bio-container">
+                <p data-aos="fade" data-aos-duration="2000">
+                  I am an introvert, but that does not affect my confidence and
+                  skills. I am geared towards helping those around me and tend
+                  to take up that role without actively seeking it outeffort. I
+                  am a critical and analytical thinker to form accurate
+                  judgment, and these skills fuel my ability to learn and
+                  implement new concepts.
+                </p>
+                <p class="bio" data-aos="fade" data-aos-duration="2000">
+                  I usually do not put myself in a leadershipin leadership
+                  position, but if the need arises I am able to meet the role
+                  head-on. I have run a backyard nursery and have done freelance
+                  work in the past. This has given me valuable skills such as
+                  communication skills and the ability to delegate tasks.
+                </p>
+              </div>
+              <img
+                src="/images/Ronald Terblanche _edit.JPG"
+                alt="Picture of Author"
+                data-aos="fade"
+                data-aos-duration="2000"
+              />
             </div>
-            <img
-              src="/images/Ronald Terblanche _edit.JPG"
-              alt="Picture of Author"
-              data-aos="fade"
-              data-aos-duration="2000"
-            />
           </div>
+          <p class="code-pass" data-aos="fade" data-aos-duration="2000">
+            My interest in this field came from the fact that I enjoy
+            self-sufficiency and prefer to solve problems by building the
+            necessary skills as needed. This has caused me to gain experience in
+            working with the terminal and troubleshooting problems in particular
+            to phones and computers. I have also played around with loading
+            different Linux distributions for old phones to improve performance.
+          </p>
         </div>
         <div class="skills-content">
           <p class="skills-heading" data-aos="fade" data-aos-duration="2000">
@@ -132,7 +151,7 @@
         <i class="fab fa-css3-alt css"></i>
         <i class="fab fa-python python"></i> -->
       </div>
-      <div class="section work" id="thirdPage">
+      <div class="section work" id="work">
         <p class="education-heading" data-aos="fade" data-aos-duration="2000">
           Education
         </p>
@@ -225,7 +244,7 @@
           </div>
         </div>
       </div>
-      <div class="section projects" id="fourthPage">
+      <div class="section projects" id="projects">
         <div data-aos="fade" data-aos-duration="2000">
           <p class="projects-heading">Projects</p>
         </div>
@@ -243,7 +262,13 @@
             veritatis laborum. Earum!
           </p>
           <div class="project-buttons">
-            <a href="#">Live</a><a href="#">Github</a>
+            <a href="https://frosty-hugle-7920c4.netlify.app/" target="_blank"
+              >Live</a
+            ><a
+              href="https://github.com/dekapaan/testimonial-slider"
+              target="_blank"
+              >Github</a
+            >
           </div>
         </div>
         <div
@@ -260,7 +285,13 @@
             veritatis laborum. Earum!
           </p>
           <div class="project-buttons">
-            <a href="#">Live</a><a href="#">Github</a>
+            <a
+              href="https://competent-goodall-31004c.netlify.app/"
+              target="_blank"
+              >Live</a
+            ><a href="https://github.com/dekapaan/timeline" target="_blank"
+              >Github</a
+            >
           </div>
         </div>
         <div
@@ -277,7 +308,13 @@
             veritatis laborum. Earum!
           </p>
           <div class="project-buttons">
-            <a href="#">Live</a><a href="#">Github</a>
+            <a
+              href="https://infallible-dijkstra-571a0d.netlify.app/"
+              target="_blank"
+              >Live</a
+            ><a href="https://github.com/dekapaan/contact-form" target="_blank"
+              >Github</a
+            >
           </div>
         </div>
         <div
@@ -294,7 +331,16 @@
             veritatis laborum. Earum!
           </p>
           <div class="project-buttons">
-            <a href="#">Live</a><a href="#">Github</a>
+            <a
+              href="https://replit.com/@dekapaan/python-rock-paper-scissors#main.py"
+              ,
+              target="_blank"
+              >Live</a
+            ><a
+              href="https://github.com/dekapaan/python-rock-paper-scissors"
+              target="_blank"
+              >Github</a
+            >
           </div>
         </div>
         <div
@@ -311,7 +357,13 @@
             veritatis laborum. Earum!
           </p>
           <div class="project-buttons">
-            <a href="#">Live</a><a href="#">Github</a>
+            <a
+              href="https://replit.com/@dekapaan/python-SA-ID#main.py"
+              target="_blank"
+              >Live</a
+            ><a href="https://github.com/dekapaan/python-SA-ID" target="_blank"
+              >Github</a
+            >
           </div>
         </div>
         <div
@@ -328,12 +380,243 @@
             veritatis laborum. Earum!
           </p>
           <div class="project-buttons">
-            <a href="#">Live</a><a href="#">Github</a>
+            <a href="https://replit.com/join/oieqvhuu-dekapaan" target="_blank"
+              >Live</a
+            ><a
+              href="https://github.com/dekapaan/python-BMI-calculator"
+              target="_blank"
+              >Github</a
+            >
           </div>
         </div>
       </div>
-      <div class="section testimonials" id="#testimonial">
-        <p class="testimonial-heading">Testimonials</p>
+      <div id="testimonials">
+        <div class="container" data-aos="fade" data-aos-duration="2000">
+          <p
+            class="testimonial-heading"
+            data-aos="fade"
+            data-aos-duration="2000"
+          >
+            Testimonials
+          </p>
+          <div class="owl-carousel owl-theme">
+            <div class="testimonial-item item">
+              <div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  voluptates optio quam! Eos, numquam. Sit sunt aperiam facilis
+                  corrupti ea cumque non necessitatibus molestiae. Obcaecati
+                  quae ipsum iure dolorem temporibus."
+                </p>
+              </div>
+              <div>
+                <div class="author-container">
+                  <img
+                    class="img"
+                    src="/images/Godwin.png"
+                    alt="image of zoe"
+                    style="
+                      width: 150px;
+                      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                      animation: border-change 10s infinite;
+                    "
+                  />
+                  <div class="author-title">
+                    <p class="author">- Godwin</p>
+                    <p class="title">Head of curriculum</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item item">
+              <div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  voluptates optio quam! Eos, numquam. Sit sunt aperiam facilis
+                  corrupti ea cumque non necessitatibus molestiae. Obcaecati
+                  quae ipsum iure dolorem temporibus."
+                </p>
+              </div>
+              <div>
+                <div class="author-container">
+                  <img
+                    class="img"
+                    src="/images/Godwin.png"
+                    alt="image of zoe"
+                    style="
+                      width: 150px;
+                      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                      animation: border-change 10s infinite;
+                    "
+                  />
+                  <div class="author-title">
+                    <p class="author">- Jason Wandrag</p>
+                    <p class="title">Lifechoices lecturer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item item">
+              <div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  voluptates optio quam! Eos, numquam. Sit sunt aperiam facilis
+                  corrupti ea cumque non necessitatibus molestiae. Obcaecati
+                  quae ipsum iure dolorem temporibus."
+                </p>
+              </div>
+              <div>
+                <div class="author-container">
+                  <img
+                    class="img"
+                    src="/images/Adam Africa (2).JPG"
+                    alt="image of zoe"
+                    style="
+                      width: 150px;
+                      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                      animation: border-change 10s infinite;
+                    "
+                  />
+                  <div class="author-title">
+                    <p class="author">- Adam Africa</p>
+                    <p class="title">Software Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item item">
+              <div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  voluptates optio quam! Eos, numquam. Sit sunt aperiam facilis
+                  corrupti ea cumque non necessitatibus molestiae. Obcaecati
+                  quae ipsum iure dolorem temporibus."
+                </p>
+              </div>
+              <div>
+                <div class="author-container">
+                  <img
+                    class="img"
+                    src="/images/Zoe Erispe (1).JPG"
+                    alt="image of zoe"
+                    style="
+                      width: 150px;
+                      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                      animation: border-change 10s infinite;
+                    "
+                  />
+                  <div class="author-title">
+                    <p class="author">- Zoe Erispe</p>
+                    <p class="title">Software Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item item">
+              <div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                  voluptates optio quam! Eos, numquam. Sit sunt aperiam facilis
+                  corrupti ea cumque non necessitatibus molestiae. Obcaecati
+                  quae ipsum iure dolorem temporibus."
+                </p>
+              </div>
+              <div>
+                <div class="author-container">
+                  <img
+                    class="img"
+                    src="/images/Brent Lee Johnson (1).JPG"
+                    alt="image of zoe"
+                    style="
+                      width: 150px;
+                      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                      animation: border-change 10s infinite;
+                    "
+                  />
+                  <div class="author-title">
+                    <p class="author">- Brent Johnson</p>
+                    <p class="title">Software Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section contact-footer" id="contact">
+        <div class="email-text">
+          <p class="lets">Let's get in touch</p>
+          <p class="email">terblancheronald@gmail.com</p>
+        </div>
+        <div id="form">
+          <form
+            class="form"
+            action="https://formspree.io/f/mzbyzylq"
+            method="POST"
+          >
+            <p class="contact-form-heading">Contact Form</p>
+            <div class="contact-info">
+              <label for="name" class="contact-label">Your Name: </label>
+              <input
+                class="contact-input"
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="contact-info">
+              <label class="contact-label" for="email"> Your email: </label>
+              <input
+                class="contact-input"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="name@domain.com"
+              />
+            </div>
+            <div class="contact-info">
+              <label class="contact-label" for="number">Your Number: </label>
+              <input
+                class="contact-input"
+                type="tel"
+                name="number"
+                id="number"
+                placeholder="012 345 6789"
+              />
+            </div>
+            <div class="contact-info">
+              <label class="contact-label"> Your message: </label>
+              <textarea
+                class="contact-input"
+                name="message"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <!-- your other form fields go here -->
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="copyright">© RonaldTerblanche</p>
+        <a href="#home" class="home-arrow"
+          ><i class="fas fa-chevron-up fa-2x"></i
+        ></a>
+        <div class="profiles">
+          <a href="https://github.com/dekapaan" target="_blank"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ronald-terblanche-665b25211/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in fa-2x"></i
+          ></a>
+        </div>
       </div>
     </div>
     <!-- Scripts -->
@@ -345,5 +628,29 @@
       src="https://kit.fontawesome.com/c29743a859.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 0,
+          dots: true,
+          navigation: true,
+          autoplay: true,
+        });
+      });
+    </script>
   </body>
 </html>

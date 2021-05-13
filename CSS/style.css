@@ -5,6 +5,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -14,15 +15,14 @@ body {
   font-family: "inter", sans-serif;
   background-color: #111;
 }
-.home,
-.work,
-.contact {
-  height: 100vh;
-}
+
 .home-social {
   position: absolute;
   top: 10px;
   right: 60px;
+}
+a {
+  color: #eeeeee;
 }
 .home-social a {
   text-decoration: none;
@@ -114,20 +114,19 @@ body {
 .section.about {
   background: #111;
   color: #eeeeee;
-  height: fit-content;
+  height: auto;
 }
 .bio-pic {
+  object-fit: cover;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .about img {
-  display: inline-block;
-  width: 20%;
-  margin-right: 10%;
+  object-fit: contain;
+  width: 300px;
 }
 .about-heading {
-  display: inline-block;
   margin-left: 15%;
   margin-top: 12%;
   margin-bottom: 5%;
@@ -136,27 +135,36 @@ body {
 }
 .about-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 8%;
 }
-.about p.bio {
+.bio-container {
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 100;
   color: white;
   padding-right: 5%;
-  margin-left: 30%;
+  margin-left: 0;
+}
+.about p.bio {
+  margin-left: 10%;
+  margin-top: 20%;
 }
 .about .code-pass {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 100;
   width: 50%;
-  margin-top: 10%;
-  margin-left: 5%;
+  margin-top: 50px;
+  margin-left: 11.5%;
   color: white;
 }
 p.skills-heading {
-  display: inline-block;
   margin-left: 15%;
   margin-top: 15%;
   margin-bottom: 5%;
@@ -197,23 +205,22 @@ p.skills-heading {
 }
 .technical-skills div:first-of-type {
   margin-left: 15%;
-  margin-right: -5.5%;
+  margin-right: -75px;
   transform: rotate(-90deg);
 }
 .section.work {
   background: #111;
   color: #eeeeee;
-  height: fit-content;
+  height: 100%;
+  padding: 0 100px 0 0;
 }
 p.education-heading {
-  display: inline-block;
   font-family: "inter", sans-serif;
   font-size: 70px;
   margin-top: 12%;
   margin-left: 8%;
 }
 .education-content {
-  display: inline-block;
   margin-top: 5%;
   margin-left: 26%;
   font-family: "inter", sans-serif;
@@ -229,7 +236,6 @@ p.education-heading {
   margin-bottom: 2%;
 }
 .description {
-  display: inline-block;
   font-family: "inter", sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -241,40 +247,43 @@ p.education-heading {
   font-family: "inter", sans-serif;
   font-size: 70px;
   margin-top: 14%;
-  margin-right: 8%;
+  margin-right: 10%;
 }
 .experience-content {
   margin-top: 5%;
-  margin-right: 26%;
+  margin-right: 15%;
 }
 .projects {
-  height: fit-content;
+  height: 480vh;
   background-color: #111;
   color: #eeeeee;
+  padding: 5%;
+  margin-bottom: 10px;
 }
 .projects-heading {
-  display: inline-block;
   font-size: 70px;
-  margin-top: 15%;
+  margin-top: 10%;
+  margin-left: 8%;
+  margin-bottom: 5%;
   color: #eeeeee;
-  text-align: end;
-  transform: rotate(-90deg);
 }
 .project {
-  height: 373px;
-  width: 737px;
+  width: 50%;
+  min-width: 300px;
+  background-position: center;
   font-family: "Roboto", sans-serif;
   color: white;
   padding: 20px 30px;
   margin-bottom: 7%;
+  margin-right: 20px;
 }
 .project-left {
   /* text-shadow: 1px 1px #111; */
   text-align: end;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 .project-right {
-  margin-left: 52%;
+  margin-left: 43%;
 }
 .project-heading {
   font-size: 50px;
@@ -292,7 +301,6 @@ p.education-heading {
   font-size: 22px;
 }
 .project-buttons a {
-  display: inline-block;
   text-decoration: none;
   color: white;
   position: relative;
@@ -352,29 +360,351 @@ p.education-heading {
 .testimonial-heading {
   font-size: 70px;
   color: #eeeeee;
-  margin-left: 15%;
-  margin-top: 12%;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 8%;
 }
-.testimonial-item img {
-  width: fit-content;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  animation: border-change 10s infinite;
-  width: 40%;
-  margin-right: 8%;
+.container {
+  padding: 10px 0 30px 0;
+  height: 115vh;
+  width: 100vw;
 }
-.iamge-quote {
+div.testimonial-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 30px;
+  border-radius: 7px;
+  overflow: hidden;
+  color: #eeeeee;
+}
+.testimonial-item div:first-of-type {
+  width: 50%;
+}
+.testimonial-item.img {
+  padding: 0;
+  border-radius: 50%;
+  max-width: 100px;
+  height: 100px;
+}
+.testimonial-text {
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.author-container {
+  display: flex;
+  flex-direction: row;
+}
+.author-container img {
+  margin-right: 20%;
+}
+.author-title {
+  align-self: center;
+}
+.author {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  width: 200px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 100;
+  width: 200px;
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-theme .owl-dots .owl-dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background: #e9e2c3;
+  border: 1px solid #e9e2c3;
+  outline: none;
+  margin-left: 20px;
+  transition: 0.3s ease-in;
+}
+.owl-theme .owl-dots .owl-dot.active,
+.owl-theme .owl-dots .owl-dot:hover {
+  width: 20px;
+  border-radius: 5px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  opacity: 0;
+}
+.contact-footer {
+  padding: 0 0 0 5%;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.email-text {
+  align-self: center;
+  color: #eeeeee;
+}
+.email {
+  font-size: 40px;
+}
+.lets {
+  font-size: 20px;
+  font-weight: 100;
+}
+#form {
+  margin-right: 15%;
+  width: 26vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  border-radius: 4px;
+}
+.contact-form-heading {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10%;
+  color: #eeeeee;
+}
+.contact-label {
+  display: none;
+}
+.contact-input {
+  text-align: start;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5% 30%;
+  background: #111;
+  border: none;
+  border-bottom: solid 1px #eeeeee3f;
+  color: #eeeeee;
+  outline: none;
+  font-size: 15px;
+}
+.contact-input ::placeholder {
+  text-transform: uppercase;
+  text-align: start;
 }
 
-.boop {
-  text-align: right;
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-right: 5%;
 }
-.one {
-  height: 100vh;
+button {
+  position: relative;
+  margin-left: 30%;
+  display: inline-block;
+  margin-top: 30px;
+  font-family: "inter", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  align-self: flex-start;
+  transition-duration: 0.4s;
+  background: #111;
+  border: none;
+  border-bottom: none;
+  color: #eeeeee;
 }
-@media screen and (max-width: 800px) {
+button::after {
+  display: block;
+  position: absolute;
+  bottom: 50%;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background: #eeeeee;
+  transition: 0.2s linear;
+}
+button:hover::after {
+  width: 100%;
+}
+.footer {
+  height: 10vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 60px 10px 5.5%;
+  color: #eeeeee;
+  background: #111;
+  font-family: "inter", sans-serif;
+  font-weight: 200;
+}
+.copyright {
+  font-size: 20px;
+}
+.home-arrow {
+  color: #eeeeee;
+  transform: translate(50%);
+}
+.profiles {
+  display: flex;
+}
+.profiles i {
+  margin-left: 20px;
+}
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
   .home {
     font-size: 10px;
+  }
+  .home p:last-of-type {
+    font-size: 50px;
+  }
+  .section.about {
+    height: auto;
+  }
+  .about-heading {
+    font-size: 50px;
+  }
+  .about-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about img {
+    margin-left: 10px;
+  }
+  .about p.bio {
+    margin-top: 10%;
+    margin-bottom: 50px;
+  }
+  .about .code-pass {
+    margin-top: 0;
+    margin-left: 28px;
+    padding-right: 20px;
+    width: 90%;
+  }
+  p.skills-heading {
+    font-size: 50px;
+  }
+  .soft-skills {
+    margin-left: 5%;
+  }
+  .technical-skills {
+    margin-top: 50px;
+  }
+  .technical-skills div:first-of-type {
+    margin-right: -75px;
+  }
+  .section.work {
+    height: auto;
+    padding: 0;
+  }
+  .education-content {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+  p.education-heading,
+  p.experience-heading {
+    font-size: 50px;
+  }
+  p.experience-heading {
+    margin-left: 25%;
+  }
+  .experience-content {
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 18%;
+  }
+  .projects-heading {
+    margin-bottom: 50px;
+    font-size: 50px;
+  }
+  .project-left {
+    margin-left: 10px;
+  }
+  .project {
+    width: 80%;
+  }
+  .project-right {
+    margin-left: 10px;
+  }
+  .home-social {
+    right: 20px;
+    top: 12px;
+  }
+  .projects {
+    height: auto;
+  }
+  .testimonial-heading {
+    font-size: 50px;
+  }
+  .testimonial-row {
+    flex-direction: column;
+  }
+  .testimonial-container img {
+    margin: 20px 0;
+  }
+  .testimonial-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .testimonial-heading {
+    margin-bottom: 50px;
+  }
+  .author-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .author-container img {
+    margin: 0 0 0 50px;
+  }
+  .testimonial-item div:first-of-type {
+    width: 95%;
+  }
+  .container {
+    height: auto;
+  }
+  .contact-footer {
+    padding: 0;
+  }
+  .footer {
+    padding: 1px;
+    height: auto;
+  }
+  .profiles i {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .contact-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  div.testimonial-item {
+    text-align: center;
+    padding: 0;
+  }
+  .projects {
+    height: auto;
+  }
+  #form {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  #myMenu {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .email {
+    font-size: 25px;
   }
 }
 @keyframes border-change {
