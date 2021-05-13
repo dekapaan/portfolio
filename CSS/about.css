@@ -1,0 +1,144 @@
+/* About */
+.section.about {
+  background: #111;
+  color: #eeeeee;
+  height: auto;
+}
+.bio-pic {
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about img {
+  object-fit: contain;
+  width: 300px;
+}
+.about-heading {
+  margin-left: 15%;
+  margin-top: 12%;
+  margin-bottom: 5%;
+  font-family: "inter", sans-serif;
+  font-size: 70px;
+}
+.about-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 8%;
+}
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  padding-right: 5%;
+  margin-left: 0;
+}
+.about p.bio {
+  margin-left: 10%;
+  margin-top: 20%;
+}
+.about .code-pass {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 11.5%;
+  color: white;
+}
+p.skills-heading {
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  font-family: "inter", sans-serif;
+  font-size: 70px;
+}
+.soft-skills {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-left: 50%;
+  font-size: 30px;
+  font-weight: 100;
+  color: #eeeeee;
+}
+.soft-skills p {
+  text-align: right;
+}
+.soft-skills div:last-of-type {
+  align-self: center;
+  margin-left: 20px;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+}
+.soft-skills div:last-of-type::after {
+  width: 100%;
+}
+.technical-skills {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 3%;
+  font-size: 30px;
+  font-weight: 100;
+  color: #eeeeee;
+}
+.technical-skills div:first-of-type {
+  margin-left: 15%;
+  margin-right: -75px;
+  transform: rotate(-90deg);
+}
+/* Education and Experience */
+.section.work {
+  background: #111;
+  color: #eeeeee;
+  height: 100%;
+  padding: 0 100px 0 0;
+}
+p.education-heading {
+  font-family: "inter", sans-serif;
+  font-size: 70px;
+  margin-top: 12%;
+  margin-left: 8%;
+}
+.education-content {
+  margin-top: 5%;
+  margin-left: 26%;
+  font-family: "inter", sans-serif;
+}
+.time {
+  font-size: 18px;
+  font-weight: 100;
+}
+.what {
+  font-family: "inter", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 2%;
+}
+.description {
+  font-family: "inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+.experience-content-container {
+  text-align: end;
+}
+.experience-heading {
+  font-family: "inter", sans-serif;
+  font-size: 70px;
+  margin-top: 14%;
+  margin-right: 10%;
+}
+.experience-content {
+  margin-top: 5%;
+  margin-right: 15%;
+}

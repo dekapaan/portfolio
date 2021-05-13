@@ -1,0 +1,104 @@
+/* Projects */
+.projects {
+  height: 420vh;
+  background-color: #111;
+  color: #eeeeee;
+  padding: 5%;
+  margin-bottom: 10px;
+}
+.projects-heading {
+  font-size: 70px;
+  margin-top: 6%;
+  margin-left: 8%;
+  margin-bottom: 5%;
+  color: #eeeeee;
+}
+.project {
+  width: 50%;
+  min-width: 300px;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 20px 30px;
+  margin-bottom: 7%;
+  margin-right: 20px;
+}
+.project-left {
+  text-align: end;
+  margin-left: 10%;
+}
+.project-right {
+  margin-left: 43%;
+}
+.project-heading {
+  font-size: 50px;
+  font-weight: 200;
+  z-index: 0;
+}
+.project-tool {
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.project-description {
+  font-family: "inter", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+.project-buttons a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.project-buttons a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  bottom: 50%;
+  position: absolute;
+  background-color: #eeeeee;
+  transition: 0.2s linear;
+}
+.project-buttons a:hover::after {
+  width: 100%;
+}
+.project-buttons {
+  font-family: "Roboto", sans-serif;
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 200;
+  font-size: 22px;
+}
+.project1 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/project_images/testimonial.png);
+  background-size: cover;
+}
+.project2 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/project_images/timeline.png);
+  background-size: cover;
+}
+.project3 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/project_images/contact.png);
+  background-size: cover;
+}
+.project4 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/project_images/rock-paper.png);
+  background-size: cover;
+}
+.project5 {
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+    url(/images/project_images/sa-id.png);
+  background-size: cover;
+}
+.project6 {
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)),
+    url(/images/project_images/BMI.png);
+  background-size: cover;
+}
