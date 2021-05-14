@@ -121,6 +121,11 @@
   .contact-footer {
     padding: 0;
   }
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .footer {
     padding: 1px;
     height: auto;
