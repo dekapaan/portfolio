@@ -1,8 +1,9 @@
 /* About */
 .section.about {
+  white-space: normal;
   background: #111;
   color: #eeeeee;
-  height: auto;
+  height: 100%;
 }
 .bio-pic {
   object-fit: cover;

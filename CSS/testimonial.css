@@ -7,10 +7,13 @@
   margin-left: 8%;
 }
 .container {
+  white-space: normal;
+  margin: 1px;
   padding: 10px 0 30px 0;
   height: 115vh;
   width: 100vw;
 }
+
 div.testimonial-item {
   display: flex;
   align-items: center;
