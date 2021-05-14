@@ -76,8 +76,10 @@ button {
   border: none;
   border-bottom: none;
   color: #eeeeee;
+  outline: none;
 }
 button::after {
+  outline: none;
   display: block;
   position: absolute;
   bottom: 50%;
