@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ronald Terblanche</title>
     <!-- My CSS -->
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/landing_and_nav.css" />
@@ -42,7 +42,7 @@
   </head>
   <body>
     <div>
-      <ul id="myMenu" data-aos="fade" data-aos-duration="2000" class="nav">
+      <ul class="myMenu">
         <li>
           <a href="#home" class="active">Home</a>
         </li>
@@ -58,6 +58,9 @@
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button onclick="togglemenu()" class="navbutton">
+        <i class="fas fa-bars"></i>
+      </button>
       <div
         class="section home"
         class="luxy-el"
@@ -615,8 +618,9 @@
         </div>
       </div>
     </div>
-    <!--  -->
-    <!-- Scripts -->
+    <!-- My scripts -->
+    <script src="/scripts/scripts.js"></script>
+    <!-- External Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

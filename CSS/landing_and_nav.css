@@ -28,22 +28,23 @@ a {
   width: 100%;
 }
 
-#myMenu {
+.myMenu {
   position: fixed;
   bottom: 100px;
   right: 60px;
   text-align: right;
   list-style: none;
   z-index: 9999;
+  transition: 0.3s ease-in;
 }
-#myMenu li a {
+.myMenu li a {
   text-decoration: none;
   color: #eeeeee;
   display: inline-block;
   margin-bottom: 10px;
   position: relative;
 }
-#myMenu a::after {
+.myMenu a::after {
   content: "";
   display: block;
   bottom: 50%;
@@ -53,11 +54,13 @@ a {
   position: absolute;
   transition: 0.3s linear;
 }
-#myMenu a:hover::after {
+.myMenu a:hover::after {
   width: 100%;
 }
-.nav a.active {
-  text-decoration: line-through;
+.navbutton {
+  display: none;
+  color: #eeeeee;
+  cursor: pointer;
 }
 .home {
   background: #111;

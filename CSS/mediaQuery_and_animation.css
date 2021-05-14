@@ -153,8 +153,24 @@
     margin-top: 40px;
     margin-right: 0;
   }
-  #myMenu {
+  .myMenu {
     right: 10px;
+  }
+}
+@media screen and (max-width: 1255px) {
+  .myMenu {
+    right: -100px;
+    transition: 0.5s ease-in;
+  }
+  .myMenu.show-menu {
+    right: 60px;
+    transition: 0.5s ease-in;
+  }
+  .navbutton {
+    display: block;
+    position: fixed;
+    bottom: 180px;
+    right: 20px;
   }
 }
 @media screen and (max-width: 590px) {
