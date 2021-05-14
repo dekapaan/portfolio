@@ -182,11 +182,7 @@
     font-size: 25px;
   }
 }
-@media screen and (max-width: 1400) {
-  .projects {
-    height: 500vh;
-  }
-}
+
 @keyframes border-change {
   0% {
     border-radius: 50%;
