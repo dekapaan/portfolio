@@ -77,7 +77,7 @@ a {
   padding: 120px;
   background: #e9e2c3;
   border-radius: 50%;
-  animation: border-change 10s infinite;
+  animation: border-change 8s infinite;
 }
 .name {
   position: absolute;
