@@ -1,5 +1,4 @@
 /* Media query and animation*/
-
 @media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
@@ -88,10 +87,6 @@
   .projects {
     height: auto;
   }
-  .owl-carousel {
-    transform: translate(0, 40%);
-    /*  */
-  }
   .testimonial-heading {
     font-size: 50px;
   }
@@ -121,8 +116,7 @@
     width: 95%;
   }
   .container {
-    height: 55vh;
-    padding: 5% 0;
+    height: auto;
   }
   .contact-footer {
     padding: 0;
@@ -131,8 +125,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    padding: 0;
   }
   .footer {
     padding: 1px;
@@ -143,6 +135,13 @@
   }
 }
 @media screen and (max-width: 1080px) {
+  .contact-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 100px;
+  }
   div.testimonial-item {
     text-align: center;
     padding: 0;
