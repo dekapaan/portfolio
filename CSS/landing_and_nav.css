@@ -61,6 +61,7 @@ a {
   display: none;
   color: #eeeeee;
   cursor: pointer;
+  z-index: 9999;
 }
 .home {
   background: #111;
