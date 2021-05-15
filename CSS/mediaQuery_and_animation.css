@@ -176,6 +176,9 @@
     bottom: 180px;
     right: 20px;
   }
+  input::placeholder {
+    text-overflow: ellipsis;
+  }
 }
 @media screen and (max-width: 590px) {
   .email {
