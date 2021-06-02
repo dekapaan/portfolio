@@ -1,6 +1,6 @@
 /* Testimonials */
 .testimonial-heading {
-  font-size: 70px;
+  font-size: clamp(40px, 5vw, 70px);
   color: #eeeeee;
   margin-top: 5%;
   margin-bottom: 10%;

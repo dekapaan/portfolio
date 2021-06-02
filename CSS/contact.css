@@ -13,7 +13,7 @@
   color: #eeeeee;
 }
 .email {
-  font-size: 40px;
+  font-size: clamp(20px, 5vw, 40px);
 }
 .lets {
   font-size: 20px;
@@ -63,23 +63,23 @@
   align-content: center;
   margin-right: 5%;
 }
-button {
+.contact button {
   position: relative;
   margin-left: 30%;
   display: inline-block;
   margin-top: 30px;
   font-family: "inter", sans-serif;
-  font-size: 22px;
+  font-size: clamp(20px, 5vw, 2px);
   font-weight: 200;
   align-self: flex-start;
   transition-duration: 0.4s;
-  background: #111;
+  background: rgba(17, 17, 17, 0);
   border: none;
   border-bottom: none;
   color: #eeeeee;
   outline: none;
 }
-button::after {
+.contact button::after {
   outline: none;
   display: block;
   position: absolute;

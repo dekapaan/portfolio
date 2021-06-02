@@ -6,46 +6,51 @@
   .home {
     font-size: 10px;
   }
-  .home p:last-of-type {
-    font-size: 50px;
+  .name {
+    font-size: 10px;
+  }
+  .home-animation {
+    padding: 10vh;
+  }
+  body ul.myMenu {
+    padding: 0 10px;
+  }
+  button.navbutton {
+    font-size: 1em;
   }
   .section.about {
     height: auto;
   }
   .about-heading {
-    font-size: 50px;
+    margin-left: 10px;
   }
   .about-text {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 0;
+    margin-left: 0px;
     margin-right: 0;
   }
   .about img {
-    margin-left: 10px;
+    margin-left: 0;
+    width: 90%;
   }
   .about p.bio {
     margin-top: 10%;
     margin-bottom: 50px;
+    margin-left: 0;
   }
   .about .code-pass {
     margin-top: 0;
-    margin-left: 28px;
+    margin-left: 20px;
     padding-right: 20px;
     width: 90%;
-  }
-  p.skills-heading {
-    font-size: 50px;
   }
   .soft-skills {
     margin-left: 5%;
   }
   .technical-skills {
     margin-top: 50px;
-  }
-  .technical-skills div:first-of-type {
-    margin-right: -75px;
   }
   .section.work {
     height: auto;
@@ -57,39 +62,40 @@
   }
   p.education-heading,
   p.experience-heading {
-    font-size: 50px;
+    margin-left: 10px;
   }
   p.experience-heading {
     margin-left: 25%;
+    margin-right: 0;
   }
   .experience-content {
     margin-top: 50px;
     margin-right: 10px;
     margin-left: 18%;
   }
+  .projects {
+    height: auto;
+  }
   .projects-heading {
+    margin-top: 100px;
     margin-bottom: 50px;
     font-size: 50px;
-  }
-  .project-left {
     margin-left: 10px;
   }
   .project {
-    width: 80%;
+    align-self: center;
+  }
+  .project-left {
+    margin-left: 0;
   }
   .project-right {
-    margin-left: 10px;
+    margin-left: 0;
   }
   .home-social {
     right: 20px;
     top: 12px;
   }
-  .projects {
-    height: auto;
-  }
-  .testimonial-heading {
-    font-size: 50px;
-  }
+
   .testimonial-row {
     flex-direction: column;
   }
@@ -103,6 +109,7 @@
   }
   .testimonial-heading {
     margin-bottom: 50px;
+    margin-left: 10px;
   }
   .author-container {
     flex-direction: column;
@@ -125,6 +132,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
+  }
+  .form {
+    margin-right: 0;
   }
   .footer {
     padding: 1px;
@@ -147,7 +158,12 @@
     padding: 0;
   }
   .projects {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-head {
+    align-self: flex-start;
   }
   #form {
     margin-top: 40px;
@@ -158,31 +174,50 @@
   }
 }
 @media screen and (max-width: 1255px) {
+  .home-social {
+    display: none;
+  }
   .myMenu {
-    right: -150px;
+    right: 15px;
+    top: 0;
+    bottom: 0;
     transition: 0.5s ease-in;
-    padding: 5px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 14px;
+    opacity: 0;
     background-color: rgba(17, 17, 17, 0.788);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1.5px);
   }
+  .myMenu li {
+    writing-mode: vertical-lr;
+  }
   .myMenu.show-menu {
-    right: 60px;
+    opacity: 1;
     transition: 0.5s ease-in;
   }
   .navbutton {
-    display: block;
+    display: inline-block;
     position: fixed;
-    bottom: 180px;
-    right: 20px;
+    font-size: 1.5em;
+    top: 10px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
   }
   input::placeholder {
     text-overflow: ellipsis;
   }
 }
-@media screen and (max-width: 590px) {
-  .email {
-    font-size: 25px;
+@media screen and (max-width: 600px) {
+  .technical-skills div:last-of-type {
+    margin-left: -50px;
+  }
+  .soft-skills {
+    margin-right: 30px;
   }
 }
 

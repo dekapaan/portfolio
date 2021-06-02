@@ -75,7 +75,7 @@ a {
   align-content: center;
 }
 .home-animation {
-  padding: 120px;
+  padding: 20vh;
   background: #e9e2c3;
   border-radius: 50%;
   animation: border-change 8s infinite;
@@ -90,9 +90,10 @@ a {
 }
 
 .home p:last-of-type {
+  display: inline-block;
   position: absolute;
   bottom: 10px;
   left: 10px;
   text-align: left;
-  font-size: 70px;
+  font-size: clamp(31px, 5vw, 70px);
 }

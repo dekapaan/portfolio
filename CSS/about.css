@@ -20,7 +20,7 @@
   margin-top: 12%;
   margin-bottom: 5%;
   font-family: "inter", sans-serif;
-  font-size: 70px;
+  font-size: clamp(30px, 5vw, 70px);
 }
 .about-text {
   display: flex;
@@ -58,7 +58,7 @@ p.skills-heading {
   margin-top: 15%;
   margin-bottom: 5%;
   font-family: "inter", sans-serif;
-  font-size: 70px;
+  font-size: clamp(30px, 5vw, 70px);
 }
 .soft-skills {
   display: flex;
@@ -66,7 +66,7 @@ p.skills-heading {
   align-content: center;
   font-family: "Roboto", sans-serif;
   margin-left: 50%;
-  font-size: 30px;
+  font-size: clamp(20px, 5vw, 30px);
   font-weight: 100;
   color: #eeeeee;
 }
@@ -82,20 +82,26 @@ p.skills-heading {
 .soft-skills div:last-of-type::after {
   width: 100%;
 }
+.technical {
+  margin-left: -50px;
+}
 .technical-skills {
   display: flex;
   flex-direction: row;
   align-content: center;
   font-family: "Roboto", sans-serif;
   margin-top: 3%;
-  font-size: 30px;
+  font-size: clamp(20px, 5vw, 30px);
   font-weight: 100;
   color: #eeeeee;
 }
 .technical-skills div:first-of-type {
+  display: inline-block;
   margin-left: 15%;
-  margin-right: -75px;
   transform: rotate(-90deg);
+}
+.technical-skills div:last-of-type {
+  margin-left: -75px;
 }
 /* Education and Experience */
 .section.work {
@@ -106,7 +112,7 @@ p.skills-heading {
 }
 p.education-heading {
   font-family: "inter", sans-serif;
-  font-size: 70px;
+  font-size: clamp(30px, 5vw, 70px);
   margin-top: 12%;
   margin-left: 8%;
 }
@@ -121,21 +127,21 @@ p.education-heading {
 }
 .what {
   font-family: "inter", sans-serif;
-  font-size: 40px;
+  font-size: clamp(30px, 5vw, 40px);
   font-weight: 200;
   margin-bottom: 2%;
 }
 .description {
   font-family: "inter", sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: clamp(18px, 5vw, 20px);
 }
 .experience-content-container {
   text-align: end;
 }
 .experience-heading {
   font-family: "inter", sans-serif;
-  font-size: 70px;
+  font-size: clamp(40px, 5vw, 70px);
   margin-top: 14%;
   margin-right: 10%;
 }
