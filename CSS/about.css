@@ -15,6 +15,20 @@
   object-fit: contain;
   width: 300px;
 }
+.vertical-hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.horizontal-hobbies {
+  display: flex;
+  align-items: center;
+}
+.down-to-up-hobby {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+}
+
 .about-heading {
   margin-left: 8%;
   margin-top: 12%;

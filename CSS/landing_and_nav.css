@@ -54,14 +54,17 @@ a {
   position: absolute;
   transition: 0.3s linear;
 }
+
 .myMenu a:hover::after {
   width: 100%;
 }
+
 .navbutton {
   display: none;
   color: #eeeeee;
   cursor: pointer;
   z-index: 9999;
+  outline: none;
 }
 .home {
   background: #111;
