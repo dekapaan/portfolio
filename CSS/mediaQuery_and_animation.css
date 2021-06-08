@@ -177,8 +177,8 @@
     display: none;
   }
   .myMenu {
-    right: 0%;
-    top: 0;
+    right: 0;
+    top: -100%;
     opacity: 0;
     transition: 0.5s ease-in;
     width: 100vw;
@@ -192,7 +192,9 @@
     -webkit-backdrop-filter: blur(1.5px);
     z-index: 0;
   }
-
+  .myMenu li {
+    margin-bottom: 10px;
+  }
   .myMenu.show-menu {
     right: 0;
     top: 0;
