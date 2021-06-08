@@ -177,31 +177,35 @@
     display: none;
   }
   .myMenu {
-    right: -20%;
+    right: 0%;
     top: 0;
-    bottom: 0;
+    opacity: 0;
     transition: 0.5s ease-in;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: rgba(17, 17, 17, 0.788);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1.5px);
+    z-index: 0;
   }
-  .myMenu li {
-    writing-mode: vertical-lr;
-  }
+
   .myMenu.show-menu {
-    right: 1%;
+    right: 0;
+    top: 0;
+    opacity: 1;
     transition: 0.5s ease-in;
+    z-index: 2;
   }
   .navbutton {
     display: inline-block;
     position: fixed;
     font-size: 1.5em;
     top: 10px;
-    right: 1%;
+    right: 8px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
   }
@@ -209,6 +213,7 @@
     text-overflow: ellipsis;
   }
 }
+
 @media screen and (max-width: 600px) {
   .technical-skills div:last-of-type {
     margin-left: -50px;
