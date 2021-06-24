@@ -11,7 +11,7 @@
   font-weight: 200;
 }
 .copyright {
-  font-size: clamp(16px, 5vw, 20px);
+  font-size: clamp(10px, 5vw, 14px);
 }
 .home-arrow {
   color: #eeeeee;

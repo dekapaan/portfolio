@@ -5,6 +5,39 @@
   color: #eeeeee;
   margin-bottom: 10px;
 }
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.filter {
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.filter::after {
+  content: "";
+  display: block;
+  bottom: 50%;
+  width: 0%;
+  height: 1px;
+  background: #eeeeee;
+  position: absolute;
+  transition: 0.3s linear;
+}
+
+.filter:hover::after {
+  width: 100%;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .projects-heading {
   font-size: clamp(40px, 5vw, 70px);
   margin-top: 6%;
@@ -13,21 +46,17 @@
   color: #eeeeee;
 }
 .project {
-  width: 50%;
+  width: 40vw;
   min-width: 280px;
+  position: relative;
   background-position: center;
   font-family: "Roboto", sans-serif;
   color: white;
   padding: 20px 30px;
-  margin-bottom: 7%;
+  margin: 10px;
+  height: 350px;
 }
-.project-left {
-  text-align: end;
-  margin-left: 10%;
-}
-.project-right {
-  margin-left: 43%;
-}
+
 .project-heading {
   font-size: clamp(40px, 5vw, 50px);
   font-weight: 200;
@@ -63,8 +92,11 @@
   width: 100%;
 }
 .project-buttons {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
   font-family: "Roboto", sans-serif;
-  margin-top: 15%;
   display: flex;
   justify-content: space-around;
   font-weight: 200;
@@ -73,8 +105,10 @@
 .project1 {
   background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
     url(/images/project_images/testimonial.png);
+  background-position-y: center;
   background-size: cover;
 }
+
 .project2 {
   background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
     url(/images/project_images/timeline.png);
