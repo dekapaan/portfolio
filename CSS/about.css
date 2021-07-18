@@ -125,7 +125,7 @@ p.skills-heading {
   padding: 0 100px 0 0;
 }
 p.education-heading {
-  font-size: clamp(31px, 5vw, 90px);
+  font-size: clamp(35px, 5vw, 90px);
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   margin-top: 12%;
@@ -135,6 +135,7 @@ p.education-heading {
   margin-top: 5%;
   margin-left: 26%;
   font-family: "inter", sans-serif;
+  max-width: 900px;
 }
 .time {
   font-size: 18px;
@@ -142,9 +143,9 @@ p.education-heading {
 }
 .what {
   font-family: "inter", sans-serif;
-  font-size: clamp(30px, 5vw, 40px);
+  font-size: clamp(25px, 5vw, 40px);
   font-weight: 200;
-  margin-bottom: 2%;
+  margin-bottom: 20px;
 }
 .description {
   font-family: "inter", sans-serif;
@@ -155,13 +156,14 @@ p.education-heading {
   text-align: end;
 }
 .experience-heading {
-  font-size: clamp(31px, 5vw, 90px);
+  font-size: clamp(35px, 5vw, 90px);
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   margin-top: 14%;
-  margin-right: 10%;
+  margin-right: 2%;
 }
 .experience-content {
   margin-top: 5%;
-  margin-right: 15%;
+  margin-left: 20%;
+  max-width: 900px;
 }
