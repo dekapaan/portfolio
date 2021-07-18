@@ -3,6 +3,9 @@
   body {
     overflow-x: hidden;
   }
+  div.cursor {
+    display: none;
+  }
   .home {
     font-size: 10px;
   }
@@ -176,41 +179,7 @@
   .home-social {
     display: none;
   }
-  .myMenu {
-    right: 0;
-    top: -100%;
-    opacity: 0;
-    transition: 0.5s ease-in;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(17, 17, 17, 0.788);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1.5px);
-    z-index: 0;
-  }
-  .myMenu li {
-    margin-bottom: 10px;
-  }
-  .myMenu.show-menu {
-    right: 0;
-    top: 0;
-    opacity: 1;
-    transition: 0.5s ease-in;
-    z-index: 2;
-  }
-  .navbutton {
-    display: inline-block;
-    position: fixed;
-    font-size: 1.5em;
-    top: 10px;
-    right: 8px;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-  }
+
   input::placeholder {
     text-overflow: ellipsis;
   }

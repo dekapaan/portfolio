@@ -1,6 +1,75 @@
+window.addEventListener("load", () => {
+  document.querySelector(".loader").classList.add("hide");
+});
+
 function togglemenu() {
-  document.getElementsByClassName("myMenu")[0].classList.toggle("show-menu");
+  document.querySelectorAll(".nav-container").forEach((item) => {
+    item.classList.toggle("show-menu");
+  });
+  document.querySelectorAll(".nav").forEach((item) => {
+    item.classList.toggle("show-menu");
+  });
+  document.querySelector(".navbutton").classList.toggle("show-menu");
 }
+
+document.querySelector(".navbutton").addEventListener("mouseover", () => {
+  document.querySelector(".bar-top").classList.add("move");
+  document.querySelector(".bar-middle").classList.add("move");
+  document.querySelector(".bar-bottom").classList.add("move");
+});
+
+document.querySelector(".navbutton").addEventListener("mouseout", () => {
+  document.querySelector(".bar-top").classList.remove("move");
+  document.querySelector(".bar-middle").classList.remove("move");
+  document.querySelector(".bar-bottom").classList.remove("move");
+});
+
+let cursor = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", function (e) {
+  cursor.style.top = `${e.clientY}px`;
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.transform = "translate(-50%, -50%)";
+});
+
+window.addEventListener("mouseover", function () {
+  cursor.style.opacity = 1;
+});
+
+window.addEventListener("mouseout", function () {
+  cursor.style.opacity = 0;
+});
+
+let links = document.querySelectorAll("a");
+let filters = document.querySelectorAll(".filter");
+let buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("mouseover", () => {
+    cursor.classList.add("active");
+  });
+  button.addEventListener("mouseout", () => {
+    cursor.classList.remove("active");
+  });
+});
+
+links.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    cursor.classList.add("active");
+  });
+  link.addEventListener("mouseout", () => {
+    cursor.classList.remove("active");
+  });
+});
+
+filters.forEach((filter) => {
+  filter.addEventListener("mouseover", () => {
+    cursor.classList.add("active");
+  });
+  filter.addEventListener("mouseout", () => {
+    cursor.classList.remove("active");
+  });
+});
 
 let projects = [
   {
@@ -55,16 +124,35 @@ let projects = [
     liveURL: "https://replit.com/join/oieqvhuu-dekapaan",
     githubURL: "https://github.com/dekapaan/python-BMI-calculator",
   },
+  {
+    heading: "Pokemon Cards",
+    class: "project7",
+    techStack: "Javascript",
+    description:
+      " A site that has clickable pokeballs that transform into cards with the respective pokemon's details. The site also has next, previous and search functionality",
+    liveURL: "https://my-pokecards.netlify.app/",
+    githubURL: "https://github.com/dekapaan/Pokemon-cards",
+  },
+  {
+    heading: "Calculator",
+    class: "project8",
+    techStack: "Javascript",
+    description: "Simple calculator made with HTML, CSS and Javascript",
+    liveURL: "https://silly-almeida-c486f6.netlify.app/",
+    githubURL: "https://github.com/dekapaan/javascript-calculator",
+  },
 ];
 
 function newCard(card) {
   let newCard = `
-  <div class="project ${card.class}" techStack=${card.techStack}>
+  <div class="project ${card.class} fade" techStack=${card.techStack}>
+    <div>
     <p class="project-heading">${card.heading}</p>
     <p class="project-tool">${card.techStack}</p>
     <p class="project-description">
       ${card.description}
     </p>
+    </div> 
     <div class="project-buttons">
       <a href=${card.liveURL} target="_blank"
         >Live</a
@@ -76,6 +164,7 @@ function newCard(card) {
     </div>
   </div>
   `;
+
   return newCard;
 }
 
@@ -85,6 +174,15 @@ function displayCards() {
     let card = newCard(project);
     container.innerHTML += card;
   }
+  let links = document.querySelectorAll("a");
+  links.forEach((link) => {
+    link.addEventListener("mouseover", () => {
+      cursor.classList.add("active");
+    });
+    link.addEventListener("mouseout", () => {
+      cursor.classList.remove("active");
+    });
+  });
 }
 
 displayCards();
@@ -93,7 +191,13 @@ function filterProjects(category) {
   let projects = document.getElementsByClassName("project");
   if (category == "All") {
     for (project of projects) {
-      project.style.display = "block";
+      project.style.display = "flex";
+      let fade = document.querySelectorAll(".fade");
+      fade.forEach((n) => {
+        if (isInViewport(n)) {
+          n.classList.add("active");
+        }
+      });
     }
     return;
   }
@@ -103,6 +207,12 @@ function filterProjects(category) {
   let selected = document.querySelectorAll(`[techStack='${category}']`);
   console.log(selected);
   for (project of selected) {
-    project.style.display = "block";
+    project.style.display = "flex";
+    let fade = document.querySelectorAll(".fade");
+    fade.forEach((n) => {
+      if (isInViewport(n)) {
+        n.classList.add("active");
+      }
+    });
   }
 }

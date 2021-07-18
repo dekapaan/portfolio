@@ -1,6 +1,8 @@
 /* Testimonials */
 .testimonial-heading {
-  font-size: clamp(40px, 5vw, 70px);
+  font-size: clamp(31px, 5vw, 90px);
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
   color: #eeeeee;
   margin-top: 5%;
   margin-bottom: 10%;

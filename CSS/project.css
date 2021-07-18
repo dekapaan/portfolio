@@ -1,7 +1,6 @@
 /* Projects */
 .projects {
   height: 100%;
-  background-color: #111;
   color: #eeeeee;
   margin-bottom: 10px;
 }
@@ -39,13 +38,18 @@
   justify-content: center;
 }
 .projects-heading {
-  font-size: clamp(40px, 5vw, 70px);
+  font-size: clamp(31px, 5vw, 90px);
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
   margin-top: 6%;
   margin-left: 8%;
   margin-bottom: 5%;
   color: #eeeeee;
 }
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 40vw;
   min-width: 280px;
   position: relative;
@@ -54,13 +58,12 @@
   color: white;
   padding: 20px 30px;
   margin: 10px;
-  height: 350px;
+  min-height: 350px;
 }
 
 .project-heading {
   font-size: clamp(40px, 5vw, 50px);
   font-weight: 200;
-  z-index: 0;
 }
 .project-tool {
   font-weight: 100;
@@ -92,10 +95,7 @@
   width: 100%;
 }
 .project-buttons {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  right: 0;
+  margin-top: 20px;
   font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-around;
@@ -132,5 +132,15 @@
 .project6 {
   background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)),
     url(/images/project_images/BMI.png);
+  background-size: cover;
+}
+.project7 {
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)),
+    url(/images/project_images/pokemon.png);
+  background-size: cover;
+}
+.project8 {
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)),
+    url(/images/project_images/calc.png);
   background-size: cover;
 }

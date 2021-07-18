@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/CSS/contact.css" />
     <link rel="stylesheet" href="/CSS/footer.css" />
     <link rel="stylesheet" href="/CSS/mediaQuery_and_animation.css" />
+    <link rel="stylesheet" href="/CSS/animationClasses.css" />
     <!-- External CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/CSS/owl.theme.default.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -41,24 +41,42 @@
     />
   </head>
   <body>
-    <ul class="myMenu">
-      <li>
-        <a href="#home" class="active">Home</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#work">Work</a>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="noise-filter"></div>
+    <div class="loader">
+      <div class="loader-text">
+        <span class="letter letterOne">L</span>
+        <span class="letter letterTwo">O</span>
+        <span class="letter letterThree">A</span>
+        <span class="letter letterFour">D</span>
+        <span class="letter letterFive">I</span>
+        <span class="letter letterSix">N</span>
+        <span class="letter letterSeven">G</span>
+      </div>
+    </div>
+    <div class="cursor"></div>
+    <div class="nav-container">
+      <div class="nav navOne">
+        <a href="#home" class="active" onclick="togglemenu()">Home</a>
+      </div>
+      <div class="nav navHome">
+        <a href="#about" onclick="togglemenu()">About</a>
+      </div>
+      <div class="nav navWork">
+        <a href="#work" onclick="togglemenu()">Work</a>
+      </div>
+      <div class="nav navProject">
+        <a href="#projects" onclick="togglemenu()">Projects</a>
+      </div>
+      <div class="nav navTestimonials">
+        <a href="#testimonials" onclick="togglemenu()">Testimonials</a>
+      </div>
+      <div class="nav navContact">
+        <a href="#contact" onclick="togglemenu()">Contact</a>
+      </div>
+    </div>
     <button onclick="togglemenu()" class="navbutton">
-      <i class="fas fa-bars"></i>
+      <span class="bar bar-top"></span><span class="bar bar-middle"></span
+      ><span class="bar bar-bottom"></span>
     </button>
     <div
       class="section home"
@@ -67,7 +85,7 @@
       data-offset="-50"
       id="home"
     >
-      <p class="home-social" data-aos="fade" data-aos-duration="2000">
+      <p class="home-social fade">
         <a
           href="https://www.linkedin.com/in/ronald-terblanche-665b25211/"
           target="_blank"
@@ -76,30 +94,33 @@
         <a href="https://github.com/dekapaan" target="_blank">Github</a>
         <a href="https://codepen.io/dekapaan/" target="_blank">CodePen</a>
       </p>
-      <p class="name" data-aos="fade" data-aos-duration="2000">
+      <p class="name fade">
         Portfolio of <br />
         Ronald <br />
         Terblanche
       </p>
-      <p data-aos="fade" data-aos-duration="2000">
+      <p class="fade">
         Aspiring <br />
-        Backend Developer
+        Front-End Developer
       </p>
-      <span
-        class="home-animation"
-        data-aos="fade"
-        data-aos-duration="2000"
-      ></span>
+      <div class="cube-container fade">
+        <div class="cube">
+          <div class="front"></div>
+          <div class="back"></div>
+          <div class="right"></div>
+          <div class="left"></div>
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </div>
+      </div>
     </div>
     <div class="section about" id="about">
       <div class="about-container">
-        <p class="about-heading" data-aos="fade" data-aos-duration="2000">
-          About Me
-        </p>
+        <p class="about-heading fade">About Me</p>
         <div class="bio-pic">
           <div class="about-text">
             <div class="bio-container">
-              <p data-aos="fade" data-aos-duration="2000">
+              <p class="fade">
                 Hey there, the name's Ronald and I was born on 14 November 1998
                 (22 years old). I am an introvert, but that does not affect my
                 confidence and skills. I am geared towards helping those around
@@ -108,7 +129,7 @@
                 accurate judgment. These skills fuel my ability to learn and
                 implement new concepts.
               </p>
-              <p class="bio" data-aos="fade" data-aos-duration="2000">
+              <p class="bio fade">
                 I usually do not put myself in a leadership position, but if the
                 need arises I am able to meet the role head-on. I have run a
                 backyard nursery and have done freelance work in the past. This
@@ -116,20 +137,11 @@
                 ability to delegate tasks.
               </p>
             </div>
-            <div
-              class="vertical-hobbies"
-              data-aos="fade"
-              data-aos-duration="2000"
-            >
+            <div class="vertical-hobbies fade">
               <p>Playing guitar</p>
               <div class="horizontal-hobbies">
                 <p class="down-to-up-hobby">Creating Origami</p>
-                <img
-                  src="/images/Ronald Terblanche _edit.JPG"
-                  alt="Picture of Author"
-                  data-aos="fade"
-                  data-aos-duration="2000"
-                />
+                <div class="me-img fade"></div>
                 <p class="down-to-up-hobby">
                   Keeping up with the french hip hop dance scene
                 </p>
@@ -138,7 +150,7 @@
             </div>
           </div>
         </div>
-        <p class="code-pass" data-aos="fade" data-aos-duration="2000">
+        <p class="code-pass fade">
           My interest in this field came from the fact that I've always veered
           towards self-sufficiency and prefer to solve problems by building the
           necessary skills as needed. This has caused me to gain experience in
@@ -148,10 +160,8 @@
         </p>
       </div>
       <div class="skills-content">
-        <p class="skills-heading" data-aos="fade" data-aos-duration="2000">
-          Skills
-        </p>
-        <div class="soft-skills" data-aos="fade" data-aos-duration="2000">
+        <p class="skills-heading fade">Skills</p>
+        <div class="soft-skills fade">
           <div>
             <p>1. Communication</p>
             <p>2. Problem-solving</p>
@@ -160,7 +170,7 @@
           </div>
           <div>Soft</div>
         </div>
-        <div class="technical-skills" data-aos="fade" data-aos-duration="2000">
+        <div class="technical-skills fade">
           <div>Technical</div>
           <div>
             <p>1. HTML5</p>
@@ -170,16 +180,11 @@
           </div>
         </div>
       </div>
-      <!-- <i class="fab fa-html5 html"></i>
-        <i class="fab fa-css3-alt css"></i>
-        <i class="fab fa-python python"></i> -->
     </div>
     <div class="section work" id="work">
-      <p class="education-heading" data-aos="fade" data-aos-duration="2000">
-        Education
-      </p>
+      <p class="education-heading fade">Education</p>
       <div class="education-content-container">
-        <div class="education-content" data-aos="fade" data-aos-duration="2000">
+        <div class="education-content fade">
           <p class="time">2021-present</p>
           <p class="what">Lifechoices Coding Academy</p>
           <p class="description">
@@ -191,7 +196,7 @@
             unbreakable.
           </p>
         </div>
-        <div class="education-content" data-aos="fade" data-aos-duration="2000">
+        <div class="education-content fade">
           <p class="time">2017-present</p>
           <p class="what">Self Learning</p>
           <p class="description">
@@ -208,7 +213,7 @@
             learning material to teach myself the first year content of C#
           </p>
         </div>
-        <div class="education-content" data-aos="fade" data-aos-duration="2000">
+        <div class="education-content fade">
           <p class="time">2016</p>
           <p class="what">Chapman High School</p>
           <p class="description">
@@ -220,14 +225,8 @@
         </div>
       </div>
       <div class="experience-content-container">
-        <p class="experience-heading" data-aos="fade" data-aos-duration="2000">
-          Experience
-        </p>
-        <div
-          class="experience-content"
-          data-aos="fade"
-          data-aos-duration="2000"
-        >
+        <p class="experience-heading fade">Experience</p>
+        <div class="experience-content fade">
           <p class="time">2020-2021</p>
           <p class="what">Co-owner of Backyard Nursery</p>
           <p class="description">
@@ -239,11 +238,7 @@
             marketplace, and dealing with customers.
           </p>
         </div>
-        <div
-          class="experience-content"
-          data-aos="fade"
-          data-aos-duration="2000"
-        >
+        <div class="experience-content fade">
           <p class="time">2017-2020</p>
           <p class="what">Self-Employed</p>
           <p class="description">
@@ -257,10 +252,10 @@
       </div>
     </div>
     <div class="section projects" id="projects">
-      <div data-aos="fade" data-aos-duration="2000" class="proj-head">
+      <div class="proj-head fade">
         <p class="projects-heading">Projects</p>
       </div>
-      <div class="filter-buttons" data-aos="fade" data-aos-duration="2000">
+      <div class="filter-buttons fade">
         <span class="filter" onclick="filterProjects('All')">All</span>
         <span class="filter" onclick="filterProjects('HTML/CSS')"
           >HTML/CSS</span
@@ -270,18 +265,12 @@
         >
         <span class="filter" onclick="filterProjects('PYTHON')">PYTHON</span>
       </div>
-      <div
-        class="projects-container"
-        data-aos="fade"
-        data-aos-duration="2000"
-      ></div>
+      <div class="projects-container"></div>
     </div>
     <div id="testimonials">
-      <div class="container" data-aos="fade" data-aos-duration="2000">
-        <p class="testimonial-heading" data-aos="fade" data-aos-duration="2000">
-          Testimonials
-        </p>
-        <div class="owl-carousel owl-theme">
+      <div class="container">
+        <p class="testimonial-heading fade">Testimonials</p>
+        <div class="owl-carousel owl-theme fade">
           <div class="testimonial-item item">
             <div>
               <p class="testimonial-text">
@@ -428,13 +417,13 @@
       </div>
     </div>
     <div class="section contact" id="contact">
-      <div class="email-text">
+      <div class="email-text fade">
         <p class="lets">Let's get in touch</p>
         <p class="email">terblancheronald@gmail.com</p>
       </div>
       <div id="form">
         <form
-          class="form"
+          class="form fade"
           action="https://formspree.io/f/myylewae"
           method="POST"
         >
@@ -473,22 +462,19 @@
           <div class="contact-info">
             <label class="contact-label"> Your message: </label>
             <textarea
-              class="contact-input"
+              class="contact-input message"
               name="message"
               placeholder="Your message"
             ></textarea>
           </div>
           <!-- your other form fields go here -->
 
-          <button type="submit">Send</button>
+          <button type="submit" class="send-button">Send</button>
         </form>
       </div>
     </div>
     <div class="footer">
       <p class="copyright">© RonaldTerblanche</p>
-      <a href="#home" class="home-arrow"
-        ><i class="fas fa-chevron-up fa-xs"></i
-      ></a>
       <div class="profiles">
         <a href="https://github.com/dekapaan" target="_blank"
           ><i class="fab fa-github fa-s"></i
@@ -507,11 +493,9 @@
 
     <!-- My scripts -->
     <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/animation.js"></script>
     <!-- External Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+
     <script
       src="https://kit.fontawesome.com/c29743a859.js"
       crossorigin="anonymous"

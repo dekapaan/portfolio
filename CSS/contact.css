@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #111;
+  background: transparent;
   border-radius: 4px;
 }
 .contact-form-heading {
@@ -43,16 +43,24 @@
   text-align: start;
   width: 100%;
   margin-bottom: 10px;
-  padding: 5% 30%;
-  background: #111;
+  padding: 20px 50px;
+  background: transparent;
   border: none;
   border-bottom: solid 1px #eeeeee3f;
   color: #eeeeee;
   outline: none;
   font-size: 15px;
+  font-weight: 200;
+  font-family: "inter", sans-serif;
 }
-.contact-input ::placeholder {
-  text-transform: uppercase;
+.message {
+  height: 150px;
+  resize: none;
+}
+
+.contact-input::placeholder {
+  font-weight: 200;
+  font-family: "inter", sans-serif;
   text-align: start;
 }
 
@@ -65,13 +73,12 @@
 }
 .contact button {
   position: relative;
-  margin-left: 30%;
   display: inline-block;
   margin-top: 30px;
   font-family: "inter", sans-serif;
   font-size: clamp(20px, 5vw, 2px);
   font-weight: 200;
-  align-self: flex-start;
+  align-self: center;
   transition-duration: 0.4s;
   background: rgba(17, 17, 17, 0);
   border: none;
