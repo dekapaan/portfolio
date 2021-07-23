@@ -29,7 +29,7 @@ body {
   background: url("https://i.gifer.com/WmZ0.gif");
   position: fixed;
   pointer-events: none;
-  opacity: 0.08;
+  opacity: 0.06;
   z-index: 99999999;
 }
 .loader {
