@@ -26,7 +26,7 @@ document.querySelector(".navbutton").addEventListener("mouseout", () => {
 
 let cursor = document.querySelector(".cursor");
 
-window.addEventListener("mousemove", function (e) {
+window.addEventListener("mousemove", (e) => {
   cursor.style.top = `${e.clientY}px`;
   cursor.style.left = `${e.clientX}px`;
   cursor.style.transform = "translate(-50%, -50%)";

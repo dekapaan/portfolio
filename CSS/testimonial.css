@@ -33,6 +33,7 @@ div.testimonial-item {
   border-radius: 50%;
   max-width: 100px;
   height: 100px;
+  isolation: isolate;
 }
 .testimonial-text {
   font-weight: 200;
