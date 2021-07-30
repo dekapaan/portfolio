@@ -133,14 +133,6 @@ let projects = [
     liveURL: "https://my-pokecards.netlify.app/",
     githubURL: "https://github.com/dekapaan/Pokemon-cards",
   },
-  {
-    heading: "Calculator",
-    class: "project8",
-    techStack: "Javascript",
-    description: "Simple calculator made with HTML, CSS and Javascript",
-    liveURL: "https://silly-almeida-c486f6.netlify.app/",
-    githubURL: "https://github.com/dekapaan/javascript-calculator",
-  },
 ];
 
 function newCard(card) {
