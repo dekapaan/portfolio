@@ -26,6 +26,10 @@
   .about-heading {
     margin-left: 10px;
   }
+
+  .bio-container {
+    padding: 0;
+  }
   .about-text {
     flex-direction: column;
     justify-content: center;
@@ -33,9 +37,8 @@
     margin-left: 0px;
     margin-right: 0;
   }
-  .about img {
-    margin-left: 0;
-    width: 90%;
+  .me-img {
+    margin-top: 40px;
   }
   .about p.bio {
     margin-top: 10%;
@@ -191,6 +194,15 @@
   }
   .soft-skills {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    justify-content: flex-start;
+  }
+  .nav a {
+    margin-left: 20px;
   }
 }
 

@@ -12,21 +12,21 @@
   width: 300px;
   height: 400px;
 }
-.vertical-hobbies {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 200;
-}
-.horizontal-hobbies {
-  display: flex;
-  align-items: center;
-}
-.down-to-up-hobby {
-  text-orientation: mixed;
-  writing-mode: vertical-lr;
+.personal-details {
+  list-style: none;
+  width: 100%;
 }
 
+.personal-detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.personal-detail:last-of-type {
+  margin: 0;
+}
 .about-heading {
   margin-left: 8%;
   margin-top: 12%;
@@ -47,6 +47,7 @@
 .bio-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 100;
@@ -54,18 +55,9 @@
   padding-right: 5%;
   margin-left: 0;
 }
-.about p.bio {
-  margin-left: 10%;
-  margin-top: 20%;
-}
-.about .code-pass {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-  width: 50%;
-  margin-top: 50px;
-  margin-left: 11.5%;
-  color: white;
+
+.bio-container p {
+  margin-bottom: 40px;
 }
 p.skills-heading {
   margin-left: 15%;
