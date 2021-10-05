@@ -103,44 +103,44 @@
   font-size: clamp(20px, 5vw, 22px);
 }
 .project1 {
-  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.5)),
     url(/images/project_images/testimonial.png);
   background-position-y: center;
   background-size: cover;
 }
 
 .project2 {
-  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.5)),
     url(/images/project_images/timeline.png);
   background-size: cover;
 }
 .project3 {
-  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.5)),
     url(/images/project_images/contact.png);
   background-size: cover;
 }
 .project4 {
-  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.55)),
     url(/images/project_images/rock-paper.png);
   background-size: cover;
 }
 .project5 {
-  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.68)),
+  background: linear-gradient(rgba(17, 17, 17, 0.68), rgba(17, 17, 17, 0.55)),
     url(/images/project_images/sa-id.png);
   background-size: cover;
 }
 .project6 {
-  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)),
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.55)),
     url(/images/project_images/BMI.png);
   background-size: cover;
 }
 .project7 {
-  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)),
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.55)),
     url(/images/project_images/pokemon.png);
   background-size: cover;
 }
 .project8 {
-  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)),
-    url(/images/project_images/calc.png);
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.55)),
+    url(/images/project_images/phactory.png);
   background-size: cover;
 }

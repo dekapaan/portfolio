@@ -133,6 +133,15 @@ let projects = [
     liveURL: "https://my-pokecards.netlify.app/",
     githubURL: "https://github.com/dekapaan/Pokemon-cards",
   },
+  {
+    heading: "Image sharing platform",
+    class: "project8",
+    techStack: "Full-Stack",
+    description:
+      "An image sharing platform made with flask for the backend and HTML, CSS and Javascript for the frontend. Features post, like, comment, search, and follow functionalities",
+    liveURL: "https://sharp-wing-efc582.netlify.app/",
+    githubURL: "https://github.com/dekapaan/final-project-frontend",
+  },
 ];
 
 function newCard(card) {
